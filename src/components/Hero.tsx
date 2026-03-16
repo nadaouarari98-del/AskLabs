@@ -1,17 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-import HeyGenAvatar from "./HeyGenAvatar";
+// import removed: HeyGenAvatar
 import Link from "next/link";
 
 export default function Hero() {
-    return (
-        <section className="min-h-screen flex flex-col items-center justify-center text-center bg-[#FFFFFF] px-6 pt-24 pb-12 overflow-hidden">
+        return (
+                <section className="relative min-h-screen flex flex-col items-center justify-center text-center bg-[#FFFFFF] px-6 pt-24 pb-12 overflow-hidden">
+                        {/* Subtle animated light dot pattern background */}
+                        <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0">
+                                <div className="w-full h-full absolute inset-0 bg-transparent">
+                                        <svg className="w-full h-full" width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g className="animate-dot-float">
+                                                        <circle cx="200" cy="200" r="3" fill="#E5E7EB" opacity="0.7" />
+                                                        <circle cx="600" cy="400" r="2.5" fill="#E5E7EB" opacity="0.5" />
+                                                        <circle cx="1200" cy="300" r="2.5" fill="#E5E7EB" opacity="0.6" />
+                                                        <circle cx="900" cy="700" r="2.5" fill="#E5E7EB" opacity="0.4" />
+                                                        <circle cx="400" cy="650" r="2.5" fill="#E5E7EB" opacity="0.5" />
+                                                        <circle cx="1100" cy="500" r="2.5" fill="#E5E7EB" opacity="0.5" />
+                                                </g>
+                                        </svg>
+                                </div>
+                        </div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="w-full flex flex-col items-center"
+                className="relative z-10 w-full flex flex-col items-center"
             >
                 <span className="uppercase text-[14px] text-[#6E6E73] tracking-[0.1em] font-medium mb-6 block">
                     INTRODUCING
@@ -32,16 +47,24 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="mt-12 w-full"
+                className="relative z-10 mt-12 w-full flex flex-col items-center"
             >
-                <HeyGenAvatar />
+                <div className="bg-white border border-[#F3F4F6] rounded-2xl flex flex-col items-center justify-center w-full max-w-[420px] aspect-video mx-auto shadow-lg">
+                    <div className="flex flex-col items-center justify-center">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="28" cy="28" r="28" fill="#F3F4F6"/>
+                            <polygon points="23,18 41,28 23,38" fill="#A3A3A3"/>
+                        </svg>
+                        <span className="block mt-4 text-[#6E6E73] text-lg font-medium opacity-80">Demo Coming Soon</span>
+                    </div>
+                </div>
             </motion.div>
 
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="mt-8"
+                className="relative z-10 mt-8"
             >
                 <Link
                     href="#demo"

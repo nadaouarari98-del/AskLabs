@@ -9,11 +9,11 @@ export default function Footer() {
                 </p>
 
                 <div className="flex items-center text-[14px] text-[#6E6E73]">
-                    <Link href="#" className="hover:text-[#1D1D1F] transition-colors">Privacy</Link>
+                    <Link href="/privacy" className="hover:text-[#1D1D1F] transition-colors">Privacy</Link>
                     <span className="mx-2">·</span>
-                    <Link href="#" className="hover:text-[#1D1D1F] transition-colors">Terms</Link>
+                    <Link href="/terms" className="hover:text-[#1D1D1F] transition-colors">Terms</Link>
                     <span className="mx-2">·</span>
-                    <Link href="#" className="hover:text-[#1D1D1F] transition-colors">Contact</Link>
+                    <a href="mailto:askwhy133@gmail.com" className="hover:text-[#1D1D1F] transition-colors">Contact</a>
                 </div>
             </div>
         </footer>

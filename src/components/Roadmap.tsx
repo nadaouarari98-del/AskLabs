@@ -7,7 +7,7 @@ export default function Roadmap() {
         {
             label: "NOW",
             title: "MVP Launch",
-            description: "Interactive AI avatar, investor-ready landing page, Kickstarter campaign.",
+            description: "Interactive AI avatar, investor-ready landing page, Indiegogo campaign.",
             active: true,
         },
         {

@@ -1,6 +1,6 @@
 "use client";
 
-import HeyGenAvatar from "./HeyGenAvatar";
+// import removed: HeyGenAvatar
 
 export default function InteractiveDemo() {
     return (
@@ -13,8 +13,16 @@ export default function InteractiveDemo() {
                     Have a conversation with our AI avatar right now.
                 </p>
 
-                <div className="mt-12 w-full max-w-[600px] mx-auto">
-                    <HeyGenAvatar />
+                <div className="mt-12 w-full max-w-[600px] mx-auto flex flex-col items-center">
+                    <div className="bg-[#18181b] rounded-2xl flex flex-col items-center justify-center w-full max-w-[420px] aspect-video mx-auto shadow-lg">
+                        <div className="flex flex-col items-center justify-center">
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="28" cy="28" r="28" fill="#232329"/>
+                                <polygon points="23,18 41,28 23,38" fill="#fff"/>
+                            </svg>
+                            <span className="block mt-4 text-[#fff] text-lg font-medium opacity-80">Demo Coming Soon</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

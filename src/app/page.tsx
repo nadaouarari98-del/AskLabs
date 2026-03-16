@@ -4,8 +4,9 @@ import Vision from "@/components/Vision";
 import HowItWorks from "@/components/HowItWorks";
 import InteractiveDemo from "@/components/InteractiveDemo";
 import Roadmap from "@/components/Roadmap";
-import KickstarterCTA from "@/components/KickstarterCTA";
+import IndiegogoCTA from "@/components/KickstarterCTA";
 import Footer from "@/components/Footer";
+import EmailCapture from "@/components/EmailCapture";
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
         <HowItWorks />
         <InteractiveDemo />
         <Roadmap />
-        <KickstarterCTA />
+        <IndiegogoCTA />
       </main>
+      <EmailCapture />
       <Footer />
     </>
   );

@@ -21,7 +21,7 @@ export default function Navbar() {
         { name: "Vision", href: "#vision" },
         { name: "How it Works", href: "#how-it-works" },
         { name: "Roadmap", href: "#roadmap" },
-        { name: "Kickstarter", href: "#kickstarter" },
+        { name: "Campaign", href: "#indiegogo" },
     ];
 
     return (
